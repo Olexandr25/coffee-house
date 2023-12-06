@@ -1,0 +1,88 @@
+.app__menu {
+  background: var(--color-orange);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-white);
+  padding-bottom: 2rem;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item_wrapper {
+  margin-bottom: 1rem;
+}
+
+.menu-item {
+  font-family: var(--font-base);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  padding-bottom: 0.5rem;
+  transition: color 0.3s; /* Add transition for smooth color change */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+.app__menu div {
+  width: 100%;
+}
+
+.menu-item:hover {
+  color: var(--color-gr); /* Change text color on hover */
+}
+
+.menu-item h2 {
+  margin-right: 1rem;
+}
+
+.menu-item span {
+  margin-left: 1rem;
+  font-size: 18px;
+}
+
+.headtext__cormorant {
+  margin-bottom: 1rem;
+}
+
+.divider {
+  border-bottom: 1px solid var(--color-white);
+  border-radius: 40px;
+  transition: border-color 0.3s; /* Add transition for smooth color change */
+}
+
+.menu-item_wrapper:hover .divider {
+  border-color: var(--color-gr); /* Change divider color on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .app__menu {
+    flex-direction: column;
+  }
+
+  .menu_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .menu_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

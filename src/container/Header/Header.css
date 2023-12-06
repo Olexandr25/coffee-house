@@ -23,5 +23,19 @@
 
 .header__sub-text {
   max-width: 40%;
-  color: #f0f0f0;
+  color: var(--color-gray);
+}
+
+.header__sub-text_space {
+  padding: 2rem 4rem;
+}
+
+.nav__wrapper {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .header__sub-text {
+    max-width: 100%;
+  }
 }

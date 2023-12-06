@@ -4,12 +4,16 @@
   --font-base: 'Cormorant Upright', serif;
   --font-alt: 'Open Sans', sans-serif;
   
-  --color-golden: #DCCA87;
+  --color-golden: #f4dfc8;
   --color-black: #0C0C0C;
-  --color-gray: #545454;
+  --color-black-light: #272829;
+  --color-gray: #f0f0f0;
+  --color-gray-light-0_5: rgba(169, 169, 169, 0.5);
+  --color-gray-light-1: rgba(169, 169, 169, 1);
   --color-crimson: #F5EFDB;
-  --color-grey: #AAAAAA;
   --color-white: #FFFFFF;
+  --color-orange: #E04D01;
+  --color-gr: #cabebe;
 }
 
 * {

@@ -1,0 +1,22 @@
+.subscriber-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-golden);
+  border-radius: 40px;
+  padding:  4px 4px 4px 16px;
+}
+
+.subscriber-input {
+  flex: 1;
+  border: none;
+  padding: 5px;
+  border-radius: 40px;
+  outline: none; /* Remove the input focus border */
+  background: transparent; /* Set the input background to transparent */
+  color: var(--color-golden); /* Set the text color */
+}
+
+/* Adjust the styles for the Button component */
+.subscriber-container .rounded-button {
+  margin-left: 10px; /* Add spacing between input and button */
+}

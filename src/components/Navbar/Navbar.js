@@ -1,38 +1,81 @@
-import React from 'react';
-import './Navbar.css'; // Import your CSS file for styling
+import React, { useState } from 'react'
+import './Navbar.css' // Import your CSS file for styling
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false)
+
   return (
-    <div className="nav_container" style={{ border: '1px solid red'}}>
+    <nav className='nav_container'>
       {/* Left side */}
       <ul className='nav_navigation'>
         <li>
-          <a href="#aboutUs" style={{ color: 'white', opacity: '0.8'}}>About us</a>
+          <a href='#aboutUs'>About us</a>
         </li>
         <li>
-          <a href="#menu" style={{ color: 'white', opacity: '0.8'}}>Menu</a>
+          <a href='#menu'>Menu</a>
         </li>
         <li>
-          <a href="#contact" style={{ color: 'white', opacity: '0.8'}}>contact</a>
+          <a href='#contact'>Contact</a>
         </li>
       </ul>
 
       {/* In center */}
-      <div>
-        <p style={{ color: 'white', opacity: '0.8'}}>CoffeeHouse</p>
+      <div className='logo'>
+        <p>CoffeeHouse</p>
       </div>
 
       {/* In right side */}
-      <ul className="social-links">
+      <ul className='social-links'>
         <li>
-          <a href="instagram" style={{ color: 'white', opacity: '0.8'}}>Instagram</a>
+          <a href='instagram'>Instagram</a>
         </li>
         <li>
-          <a href="instagram" style={{ color: 'white', opacity: '0.8'}}>TikTok</a>
+          <a href='instagram'>TikTok</a>
         </li>
       </ul>
-    </div>
-  );
+
+      <div className='app__navbar-smallscreen'>
+        <GiHamburgerMenu
+          color='#fff'
+          fontSize={27}
+          onClick={() => setToggleMenu(true)}
+        />
+
+        {toggleMenu ? (
+          <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
+            <IoMdClose
+              fontSize={27}
+              className='overlay__close'
+              onClick={() => setToggleMenu(false)}
+            />
+
+            <ul className='app__navbar-smallscreen_links'>
+              <li className='p__opensans'>
+                <a href='#home'>Home</a>
+              </li>
+              <li className='p__opensans'>
+                <a href='#about'>About</a>
+              </li>
+              <li className='p__opensans'>
+                <a href='#menu'>Menu</a>
+              </li>
+              <li className='p__opensans'>
+                <a href='#contact'>Contact</a>
+              </li>
+              <li className='p__opensans'>
+                <a href='#instagram'>Instagram</a>
+              </li>
+              <li className='p__opensans'>
+                <a href='#tikTok'>TikTok</a>
+              </li>
+            </ul>
+          </div>
+        ) : null}
+      </div>
+    </nav>
+  )
 }
 
-export default Navbar;
+export default Navbar

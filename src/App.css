@@ -8,20 +8,30 @@
   align-items: center;
 }
 
-/* .app__bg {
-  background: url('./assets/bg_shop.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  filter: brightness(50%);
-} */
 .app__bg {
   position: relative;
 }
 
+.full__width {
+  width: 100%;
+}
+
+.flex__one {
+  flex: 1;
+}
+.flex__two {
+  flex: 2;
+}
+.flex__three {
+  flex: 3;
+}
+
+.flex__column {
+  flex-direction: column;
+}
+
 .app__bg::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -100,7 +110,7 @@
 
 .p__opensans {
   font-family: var(--font-alt);
-  color: var(--color-white);
+  color: var(--color-gray-light-1);
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: capitalize;

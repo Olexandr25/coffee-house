@@ -1,0 +1,41 @@
+.rounded-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This will push the text to the left and the icon to the right */
+  position: relative;
+  border: none;
+  border-radius: 40px; /* You can adjust the radius as needed */
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid var(--color-golden);
+  color: var(--color-golden);
+}
+
+.rounded-button:hover .arrow-icon {
+  filter: brightness(1.2);
+  transform: translateX(3px); /* Adjust the value for the desired arrow movement */
+}
+
+.arrow-icon {
+  margin-left: 1rem; /* Adjust the spacing between text and arrow */
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.default {
+  background-color: var(--color-golden);
+  color: var(--color-black);
+}
+
+.default .arrow-icon {
+  color: var(--color-black);
+}
+
+.ghost {
+  background-color: transparent;
+  color: var(--color-golden);
+}
+
+.ghost .arrow-icon {
+  color: var(--color-golden);
+}

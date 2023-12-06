@@ -3,9 +3,7 @@ import './App.css'
 import { Navbar } from './components'
 import {
   AboutUs,
-  FindUs,
   Footer,
-  Gallery,
   Header,
   SpecialMenu,
 } from './container'
@@ -13,12 +11,10 @@ import {
 function App() {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Header />
       <AboutUs />
       <SpecialMenu />
-      <Gallery />
-      <FindUs />
       <Footer />
     </div>
   )

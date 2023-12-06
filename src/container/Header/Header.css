@@ -1,0 +1,27 @@
+.header__title {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  line-height: 1.5;
+  font-size: 36px;
+}
+
+.header__sub-text {
+  font-family: var(--font-alt);
+  letter-spacing: 0.04em;
+  line-height: 28px;
+}
+
+/* Center the h1 element */
+.flex__center h1 {
+  text-align: center;
+}
+
+/* Align the p element to the left */
+.flex__start p {
+  text-align: left;
+}
+
+.header__sub-text {
+  max-width: 40%;
+  color: #f0f0f0;
+}
